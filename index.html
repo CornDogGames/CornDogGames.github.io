@@ -1,97 +1,202 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lachlan Murray | Portfolio</title>
-        <link rel = "stylesheet" href = "css/styles.css" type = "text/css" media = "screen">
-    </head>
+	
+	<head>
+		
+		<title>Corn Dog Games</title>
+		
+		<link rel="icon" href="icons/main/corn.png" type="image/png">
+        <link rel="apple-touch-icon" href="icons/main/corn.png" type="image/png">
 
-    <body>
-        <div id = "page">
-            <div id = "header">
-                <h1>
-                    Lachlan Murray
-                </h1>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		
+		<!-- DISABLE LOAD ANIMATIONS -->
+		<script type="text/javascript">
+  			document.addEventListener("DOMContentLoaded",function()
+		  	{
+    			let node = document.querySelector('.Preload');
+    			node.classList.remove('Preload');
+  			});
+		</script>
+		
+	</head>
 
-                <h2>
-                    My Portfolio
-                </h2>
-            </div>
+	<body class="Preload">
+		
+		<div class="Header">
+			
+			<a href="index.html">
+				<img class="HeaderLogo" src="images/main/cornDogLogoH.png" alt="Corn Dog Games Logo">
+			</a>
+			
+			<div class="HeaderNav">
+				
+				<div class="DropButton">
+					
+					<div style="margin: 0 2vw 0.5vw">About</div>
+					
+					<div class="DropMenu">
+						<br>
+						<a href="#">The Team</a>
+						<br><br>
+						<a href="#">Contact</a>
+						<br><br>
+					</div>
+					
+				</div>
+				
+				<div class="DropButton">
+					
+					<div style="margin: 0 2vw 0.5vw">Press Kits</div>
+					
+					<div class="DropMenu">
+						<br>
+						<a href="#">Umbra</a>
+						<br><br>
+						<a href="#">Meat Spike</a>
+						<br><br>
+						<a href="#">Blast Asteroids</a>
+						<br><br>
+						<a href="#">Party Mayhem</a>
+						<br><br>
+					</div>
+					
+				</div>
+				
+				<div class="DropButton">
+					
+					<div style="margin: 0 2vw 0.5vw">Updates</div>
+					
+					<div class="DropMenu">
+						<br>
+						<a href="#">Media</a>
+						<br><br>
+						<a href="#">Dev Log</a>
+						<br><br>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<video width="100%" height="100%" autoplay muted loop poster="images/main/backgroundVideoStandin.PNG"
+		style="position:fixed; top:0; left:0; z-index:-100; filter: blur(7px) brightness(50%); object-fit: cover;">
+			<source src="videos/main/background.mp4" type="video/mp4">
+		</video>
+		
+		<div class="LandingContainer">
+			
+			<div class="Umbra">
+				
+				<img src="images/main/umbraLogo.svg" alt="Umbra Logo" width="100%"
+				style="position:relative; margin-top: 5vw;">
+				
+			</div>
+			
+			<br>
+			
+			<div class="Subtitle">
+				Discover a world of mystery
+			</div>
+			
+			<br>
+			
+			<a href="#ExploreAnchor">
+				<div class="Button" style="margin-top: 20vh;">
+				Explore
+				</div>
+			</a>
+			
+			<div class="SocialMediaMenu">
+				
+				<a href="https://discord.gg/VrNzc8p">
+					
+					<img class="SocialMediaButton" src="icons/main/discord.png" alt="Discord Link">					
+				</a>
+					
+				<br>
+				
+				<a href="https://www.instagram.com/corndoggames">
+					<img class="SocialMediaButton" src="icons/main/instagram.png" alt="Instagram Link">
+				</a>
+					
+				<br>
+				
+				<a href="https://twitter.com/CornDogGames">
+					<img class="SocialMediaButton" src="icons/main/twitter.png" alt="Twitter Link">
+				</a>
 
-            <div id = "nav">
-                <a href = "index.html" class = "link">Portfolio</a>
-                <a href = "games.html" class = "link">Games</a>
-                <a href = "about.html" class = "link">About</a>
-            </div>
+			</div>
+		
+		</div>
+			
+			<div class="Divider" style="margin:10vw 0 5vw 0"></div>
+			
+			<a id="ExploreAnchor" style="position:relative; float:left; top:30vw;"></a>
+		
+			<div>
+				
+				<video width="40%" height="auto" controls poster="images/main/videoStandin.PNG"
+				style="position:relative; float:left; margin-left: 10%; margin-top:2%; box-shadow: 0 2px 10px;">
+					<source src="videos/main/trailer.mp4" type="video/mp4">
+					Umbra Announcement Trailer
+				</video>
+				
+				<div class="Paragraph">
+					<h1>
+						Umbra
+					</h1>
+					
+					<p>
+						You are Umbra, one of the few surviving members of your kind. You find yourself in the mysterious depths of treacherous caverns trying to find a way for your people to carry on, but you aren’t alone…
+						
+						<br><br>
+						
+						There’s another race of creatures taking the opportunity to claim the caverns for themselves. They are quick and violent, and difficult to deal with alone. But you are all that’s left to protect your people and the place you call home.
+					</p>
+					
+				</div>
+				
+			</div>
+		
+			<div class="PurchaseSitesMenu">
+				
+			<a href="https://store.steampowered.com/">
+					
+				<img class="PurchaseButton" src="icons/main/steam.png" alt="Steam Link">	
+					
+			</a>
+				
+			<a href="https://www.nintendo.com/games/switch/">
+					
+				<img class="PurchaseButton" src="icons/main/switch.png" alt="Nintendo Switch Link">
+					
+			</a>
+				
+			<a href="https://store.playstation.com/en-us/home/games">
+					
+				<img class="PurchaseButton" src="icons/main/ps4.png" alt="Playstation Four Link">
+					
+			</a>
+					
+			<a href="https://www.xbox.com/en-US/games/xbox-one">
+					
+				<img class="PurchaseButton" src="icons/main/xbox.png" alt="Xbox One Link">
 
-            <div id = "sideNav">
-                <ul>
-                    <li>
-                        <a href = "#article1" class = "link">Piece 1</a>
-                    </li>
+			</a>
+				
+			<a href="#">
+					
+				<img class="ContinueButton" src="icons/main/continue.png" alt="Continue Reading">
 
-                    <li>
-                        <a href = "#article2" class = "link">Piece 2</a>
-                    </li>
+			</a>
 
-                    <li>
-                        <a href = "#article3" class = "link">Piece 3</a>
-                    </li>
-                </ul>
-            </div>
+		</div>
 
-            <div id = "main">
-                <a name="article1"></a>
-                <div class = "article">
-                    <h1>
-                        Game Development Foundations at The AIE
-                    </h1>
-
-                    <img class = "leftPos" src = "images/cornDog.png" width = "200" height = "200">
-
-                    <p>
-                        I am currently on my way to getting a <b>Certificate III</b>
-                        in <b>Information, Digital Media and Technology ICT30115</b>.
-                        If everything goes to plan then I will be finished the course
-                        on the 4th of October 2018 and recieve my <b>Cert III</b> soon after.
-                    </p>
-
-                    <p>
-                        Because of this course I am now capable of using Unity,
-                        C#, HTML and CSS. I have also been given a much wider
-                        understanding of the games industry and the process of
-                        game Development. I was given the chance to work as part
-                        of a group in a team project and that was an amazing
-                        opportunity, both for the software I learnt to use as well
-                        as the team communication skills.
-                    </p>
-                </div>
-                
-                <a name="article2"></a>
-                <div class = "article">
-                    <h1>
-                        Game Art Foundations at The AIE
-                    </h1>
-
-                    <img class = "rightPos" src = "images/environment.png" width = "200" height = "200">
-
-                    <p>
-                        I am also doing a 2 year VETis at my school through The AIE that,
-                        if I do well in will award me a <b>Certicate III</b> in <b>Screen
-                        and Media CUA31015</b>. This VETis conludes at the end of 2019.
-                    </p>
-                </div>
-                
-                <a name="article3"></a>
-                <div class = "article">
-                    <h1>VCE Computing: Software Development</h1>
-                    <img class = "leftPos" src = "images/python.png" width = "200" height = "200">
-                    <p>I will begin this school subject in 2019.</p>
-                </div>
-            </div>
-
-            <div id = "footer">
-                <p>Corn Dog Games &copy; 2018</p>
-            </div>
-        </div>
-    </body>
+		<div class="Divider" style="margin:5vw 0 5vw 0"></div>
+		
+	</body>
+	
 </html>
