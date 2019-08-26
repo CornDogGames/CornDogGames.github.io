@@ -8,13 +8,13 @@
 }
 
 /* FONTS */
-@font-face {
+@font-face
+{
 	font-family: "bahnschrift";
 	src: url("fonts/bahnschrift/Bahnschrift.eot");
 	src: 
 	url("fonts/bahnschrift/Bahnschrift.woff") format("woff"),
-	url("fonts/bahnschrift/Bahnschrift.ttf") format("ttf"),
-	url("css/fonts/Harabara.svg#filename") format("svg");
+	url("fonts/bahnschrift/Bahnschrift.ttf") format("truetype");
 }
 
 /* SCROLLBAR */
@@ -26,12 +26,12 @@
 
 ::-webkit-scrollbar-track
 {
-    background-color: #555555;
+    background-color: #444444;
 }
 
 ::-webkit-scrollbar-thumb
 {
-    background-color: #222222;
+    background-color: rgb(30,30,30);
 }
 
 ::-webkit-scrollbar-thumb:hover
@@ -67,12 +67,13 @@ body
 
 .HeaderLogo
 {
+	position:relative;
+	float:left;
 	margin-top:0.5vw;
 	margin-left:2vh;
 	height:80%;
 	filter:drop-shadow(0 6px 2px black) brightness(80%);
-	transition-duration: 0.4s;
-	transition-delay: 0.1s;
+	transition-duration: 0.2s;
 }
 
 .HeaderLogo:hover
@@ -151,7 +152,7 @@ body
 	margin:0;
 
 	color:#cccccc;
-	transition: 0.2s;
+	transition-duration: 0.2s;
 }
 
 .DropMenu a:hover
@@ -203,7 +204,7 @@ body
 	background-color:rgb(30,30,30);
 	box-shadow: 0 2px 5px black;
 	
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 .Button:hover
@@ -234,7 +235,7 @@ body
 	height:5vw;
 	filter: drop-shadow(0 4px 2px black) brightness(80%);
 	margin-bottom: 2vh;
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 .SocialMediaButton:hover
@@ -254,6 +255,29 @@ body
 	background-color:rgb(30,30,30);
 }
 
+.Video
+{
+	position: relative;
+	float:left;
+	overflow:hidden;
+	padding-bottom:22%;
+	width:40vw;
+	margin-left:10vw;
+	margin-top:2vw;
+	
+	box-shadow: 0 2px 10px;
+}
+
+.Video iframe
+{
+	position: absolute;
+	border:0;
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+}
+
 .Paragraph
 {
 	position:relative;
@@ -270,6 +294,8 @@ body
 
 .Paragraph h1
 {
+	margin-top: 2vw;
+	margin-bottom:1vw;
 	font-size: 60px;
 	font-style: italic;
 	filter:drop-shadow(0 6px 3px black);
@@ -277,7 +303,9 @@ body
 
 .Paragraph p
 {
-	font-size: 18px;
+	margin-top:0;
+	margin-bottom: 1vw;
+	font-size: 17px;
 	filter:drop-shadow(0 1px 3px black);
 }
 
@@ -297,7 +325,7 @@ body
 	
 	height:8vw;
 	filter:drop-shadow(0 4px 2px black) brightness(80%);
-	transition-duration: 0.4s;
+	transition-duration: 0.3s;
 }
 
 .PurchaseButton:hover
@@ -316,11 +344,149 @@ body
 	
 	height:5vw;
 	filter:drop-shadow(0 4px 2px black) brightness(80%);
-	transition-duration: 0.4s;
+	transition-duration: 0.2s;
 }
 
 .ContinueButton:hover
 {
 	filter:drop-shadow(0 4px 2px black) brightness(90%);
 	transform: scale(1.2);
+}
+
+/* SMALL SCREEN ADJUSTMENTS */
+@media all and (max-width: 1200px), handheld
+{
+	.HeaderNav
+	{
+		font-size:2vw;
+	}
+	
+	.SocialMediaMenu
+	{
+		top:40vh;
+	}
+	
+	.Button
+	{
+		margin-bottom: 10vw;
+	}
+	
+	.Video
+	{
+		width:50vw;
+		margin-left:25vw;
+		padding-bottom:26%;
+	}
+	
+	.Paragraph
+	{
+		margin-left:15vw;
+		width:70vw;
+		height:auto;
+	}
+	
+	.PurchaseSitesMenu
+	{
+		margin-left:20vw;
+	}
+	
+	.PurchaseButton
+	{
+		margin-top:3vw;
+		margin-right: 5vw;
+		top:0;
+	}
+	
+	.PurchaseButton:hover
+	{
+		top:1vw;
+	}
+	
+	.ContinueButton
+	{
+		top:-12vw;
+		margin-left:17vw;
+	}
+}
+
+/* PORTRAIT MODE ADJUSTMENTS */
+@media all and (orientation:portrait)
+{
+	.Header
+	{
+		height:20vw;
+	}
+	
+	.HeaderLogo
+	{
+		margin-top:2vw;
+		height:50%
+	}
+	
+	.HeaderNav
+	{
+		font-size:4vw;
+		margin-top:0.5vw;
+	}
+	
+	.Umbra
+	{
+		margin-top: 20vw;
+		width:80vw;
+	}
+	
+	.Button
+	{
+		top:-10vw;
+	}
+	
+	.SocialMediaMenu
+	{
+		top:50vh;
+		left:auto;
+		right:0;
+	}
+	
+	.SocialMediaButton
+	{
+		height:10vw;
+		right:0;
+	}
+	
+	.SocialMediaButton:hover
+	{
+		left:auto;
+		right:1vw;
+	}
+	
+	.Video
+	{
+		width:80vw;
+		margin-top:20vw;
+		margin-left:10vw;
+		padding-bottom:42%;
+	}
+	
+	.Paragraph h1
+	{
+		text-align: center;
+	}
+	
+	.PurchaseSitesMenu
+	{
+		margin-left:15vw;
+		margin-bottom: 20vw;
+	}
+	
+	.PurchaseButton
+	{
+		height:12vw;
+	}
+	
+	.ContinueButton
+	{
+		margin-left: 5vw;
+		top:-25vw;
+		height:8vw;
+	}
 }

@@ -12,11 +12,13 @@
 		
 		<!-- DISABLE LOAD ANIMATIONS -->
 		<script type="text/javascript">
-  			document.addEventListener("DOMContentLoaded",function()
+  			
+			document.addEventListener("DOMContentLoaded",function()
 		  	{
     			let node = document.querySelector('.Preload');
     			node.classList.remove('Preload');
   			});
+			
 		</script>
 		
 	</head>
@@ -37,9 +39,9 @@
 					
 					<div class="DropMenu">
 						<br>
-						<a href="#">The Team</a>
+						<a href="about.html">The Team</a>
 						<br><br>
-						<a href="#">Contact</a>
+						<a href="contact.html">Contact</a>
 						<br><br>
 					</div>
 					
@@ -51,13 +53,13 @@
 					
 					<div class="DropMenu">
 						<br>
-						<a href="#">Umbra</a>
+						<a href="umbra.html">Umbra</a>
 						<br><br>
-						<a href="#">Meat Spike</a>
+						<a href="meatSpike.html">Meat Spike</a>
 						<br><br>
-						<a href="#">Blast Asteroids</a>
+						<a href="blastAsteroids.html">Blast Asteroids</a>
 						<br><br>
-						<a href="#">Party Mayhem</a>
+						<a href="partyMayhem.html">Party Mayhem</a>
 						<br><br>
 					</div>
 					
@@ -69,9 +71,9 @@
 					
 					<div class="DropMenu">
 						<br>
-						<a href="#">Media</a>
+						<a href="media.html">Media</a>
 						<br><br>
-						<a href="#">Dev Log</a>
+						<a href="devLog.html">Dev Log</a>
 						<br><br>
 					</div>
 					
@@ -103,7 +105,7 @@
 			
 			<br>
 			
-			<a href="#ExploreAnchor">
+			<a href="#Exploring">
 				<div class="Button" style="margin-top: 20vh;">
 				Explore
 				</div>
@@ -134,15 +136,15 @@
 			
 			<div class="Divider" style="margin:10vw 0 5vw 0"></div>
 			
-			<a id="ExploreAnchor" style="position:relative; float:left; top:30vw;"></a>
+			<a id="Exploring" style="position:relative; float:left; top:30vw;"></a>
 		
 			<div>
 				
-				<video width="40%" height="auto" controls poster="images/main/videoStandin.PNG"
-				style="position:relative; float:left; margin-left: 10%; margin-top:2%; box-shadow: 0 2px 10px;">
-					<source src="videos/main/trailer.mp4" type="video/mp4">
-					Umbra Announcement Trailer
-				</video>
+				<div class="Video">
+					<iframe src="https://www.youtube.com/embed/yrvxxbPLdcA" 	frameborder="0" allowfullscreen>
+						Umbra Announcement Trailer
+					</iframe>
+				</div>
 				
 				<div class="Paragraph">
 					<h1>
