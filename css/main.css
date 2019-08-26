@@ -12,7 +12,7 @@
 {
 	font-family: "bahnschrift";
 	src: url("fonts/bahnschrift/Bahnschrift.eot?iefix") format("embedded-opentype"), url("fonts/bahnschrift/Bahnschrift.woff") format("woff"),
-	url("fonts/bahnschrift/Bahnschrift.ttf") format("truetype"), url("fonts/bahnschrift/Bahnschrift.svg#Bahnschrift") format("svg");
+	url("fonts/bahnschrift/Bahnschrift.ttf") format("truetype"), url("fonts/bahnschrift/Bahnschrift.svg#bahnschrift") format("svg");
 }
 
 /* SCROLLBAR */
