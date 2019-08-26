@@ -47,6 +47,8 @@ body
 	padding:0;
 	margin:0;
 
+	font-family:bahnschrift, sans-serif;
+	font-weight: 400;
 	background-color:rgba(40,40,40,1.00);
 }
 
@@ -91,7 +93,7 @@ body
 	
 	text-align:center;
 	font-size:22px;
-	font-family:bahnschrift;
+	
 	color:#cccccc;
 }
 
@@ -168,7 +170,6 @@ body
 {
 	text-align: center;
 	
-	font-family: bahnschrift;
 	color:#bbbbbb;
 	font-style:italic;
 	font-size: 24px;
@@ -194,7 +195,6 @@ body
 	padding: 1vw 3vw;
 	display: inline-block;
 	
-	font-family: bahnschrift;
 	font-size: 26px;
 	text-align:center;
 	
@@ -287,7 +287,6 @@ body
 	width:35vw;
 	
 	color:#cccccc;
-	font-family: bahnschrift;
 }
 
 .Paragraph h1
