@@ -194,6 +194,7 @@ body
 	position:relative;
 	padding: 1vw 3vw;
 	display: inline-block;
+	margin-top: 20vh;
 	
 	font-size: 26px;
 	text-align:center;
@@ -594,6 +595,7 @@ body
 	{
 		top:-10vw;
 		width:30vw;
+		padding: 3vh 4vh;
 		font-size:35px;
 	}
 	
@@ -667,5 +669,16 @@ body
 	.Article img
 	{
 		width:70vw;
+	}
+	
+	.Article a
+	{
+		margin-top:3vw;
+		font-size:4vw;
+	}
+	
+	.FootNav
+	{
+		font-size: 4vw;
 	}
 }
