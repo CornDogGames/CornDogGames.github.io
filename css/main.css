@@ -352,7 +352,7 @@ body
 
 .Subheading
 {
-	margin-top:5vw;
+	margin-top:0vw;
 	text-align: center;
 	font-style: italic;
 	
@@ -374,7 +374,7 @@ body
 {
 	display:inline-block;
 	
-	margin: 6vw 3vw;
+	margin: 2vw 3vw 6vw;
 	padding:2vw;
 	height:auto;
 	width:20vw;
@@ -383,12 +383,13 @@ body
 	color:#bbbbbb;
 	background-color:rgb(30,30,30);
 	filter:drop-shadow(0 4px 2px black);
-	transition-duration: 0.2s;
+	transition-duration: 0.1s;
 }
 
 .Article:hover
 {
-	transform: scale(1.3);
+	transform: scale(1.05);
+	cursor: default;
 }
 
 .Article img
@@ -404,8 +405,16 @@ body
 	margin-top:1vw;
 	
 	color:#cccccc;
+	font-size: 18px;
 	text-decoration:none;
-	border-bottom: 2px solid #cccccc;
+	transition-duration: 0.1s;
+}
+
+.Article a:hover
+{
+	margin-left:0.3vw;
+	
+	color:#eeeeee;
 }
 
 .Footer
@@ -414,11 +423,43 @@ body
 	float:left;
 	
 	margin-top:5vw;
+	padding: 3vw 0 1vw;
 	width:100%;
-	height:10vw;
+	height:auto;
 	
+	color: #cccccc;
 	background-color: rgb(30 30 30);
 	box-shadow:0 0 10px 1px black;
+}
+
+.FootNote
+{
+	position:relative;
+	float:left;
+	margin-left: 3vw;
+	
+	width:40vw;
+}
+
+.FootNav
+{
+	position:relative;
+	float:right;
+	margin-right:3vw;
+	text-align:right;
+}
+
+.Footer a
+{
+	color:#cccccc;
+	text-decoration: none;
+	transition-duration: 0.1s;
+}
+
+.Footer a:hover
+{
+	margin-right:0.5vw;
+	color:#eeeeee;
 }
 
 /* SMALL SCREEN ADJUSTMENTS */
@@ -496,6 +537,11 @@ body
 	{
 		width:50vw;
 	}
+	
+	.FootNote
+	{
+		width:60vw;
+	}
 }
 
 /* PORTRAIT MODE ADJUSTMENTS */
@@ -514,8 +560,23 @@ body
 	
 	.HeaderNav
 	{
-		font-size:4vw;
+		font-size:5vw;
 		margin-top:0.5vw;
+	}
+	
+	.DropButton
+	{
+		margin: 0 4.5vw 0.5vw;
+	}
+	
+	.DropMenu
+	{
+		font-size:3.5vw;
+	}
+	
+	.DropMenu a:hover
+	{
+		font-size:3.5vw;
 	}
 	
 	.Umbra
@@ -532,6 +593,8 @@ body
 	.Button
 	{
 		top:-10vw;
+		width:30vw;
+		font-size:35px;
 	}
 	
 	.SocialMediaMenu
